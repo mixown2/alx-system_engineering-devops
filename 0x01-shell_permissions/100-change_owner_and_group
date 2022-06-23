@@ -1,2 +1,2 @@
-!#/bin/bash
-own vincent:staff *
+#!/bin/bash
+chown vincent:staff *
