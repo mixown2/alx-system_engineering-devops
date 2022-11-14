@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# bash script to displaynumbers from 1 to 100
+# Display FizzBuzz when the number is multiple of 3 and 5
+# Display Fizz when the number is multple of 3
+# Display Buzz when the number is a multple of 5
+# Otherwise, displays the number in a list form 
+
+
+for VAR in {1..100}
+do 
+	if ((VAR % 3 == 0 && VAR % 5 == 0))
+	then 
+		echo "FizzBuzz"
+	elif ((VAR % 3 == 0))
+	then 
+		echo "Fizz"
+	elif ((VAR % 5 == 0))
+	then 
+		echo "Buzz"
+	else
+		echo "$VAR"
+	fi
+done 

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script display Best School 10 times
+
+VAR=0
+
+while [ $VAR -lt 10 ]
+do 
+	echo "Best School"
+	((VAR++))
+done 

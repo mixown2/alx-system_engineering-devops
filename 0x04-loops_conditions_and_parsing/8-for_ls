@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script will display the content of current directory
+# in a list fomrat 
+# where only the part of the name after first dash is displayed
+
+LIST=$(ls)
+
+for VAR in $LIST
+do 
+	echo "$VAR" | cut -d '-' -f2
+done

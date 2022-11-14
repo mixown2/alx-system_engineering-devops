@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# display Best School 10 times
+# but for the 9th iteration display Hi
+
+VAR=0
+
+while [ $VAR -lt 10 ]
+do 
+	if [ $VAR -eq 8 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+
+	((VAR++))
+done
